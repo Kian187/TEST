@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Farbiger Hintergrund für den ganzen Körper */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+#logo {
+    width: 150px; /* Die Größe des Logos kann angepasst werden */
+}
+
+.search-container {
+    text-align: center;
+    padding: 2rem;
+}
+
+#search-input {
+    padding: 0.5rem;
+    width: 20%; /* Die Breite des Suchfelds */
+    margin-right: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f6b;
+}
+
+
+#search-results {
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%; /* Die Breite des Ergebniscontainers */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Schatten für den Ergebniscontainer */
+}
+
+.foto-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .foto-animation {
+    width: 300px; /* Setze die gewünschte Breite */
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards; /* Animation Name, Dauer, Timing-Funktion, Fill-Mode */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+footer {
+    background-color: rgb(19, 1, 70);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.suchmaschine-container {
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+
+.ladebalken-rahmen {
+    width: 95%;
+    height: 20px;
+    border: 0px solid #000;
+}
+
+.ladebalken-fortschritt {
+    width: 0%; /* Start bei 0% und verändere diesen Wert, um den Fortschritt darzustellen */
+    height: 100%;
+    background-color: #4CAF50; /* Grüne Farbe für den Fortschritt */
+    text-align: center;
+    line-height: 30px; /* Zentriert den Text vertikal, muss der Höhe des Rahmens entsprechen */
+    color: white; /* Textfarbe */
+}
+
+@keyframes ladeAnimation {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+.ladebalken-fortschritt {
+    animation-name: ladeAnimation;
+    animation-duration: 4s; /* Dauer der Animation */
+    animation-fill-mode: forwards; /* Damit der Balken am Ende der Animation stehen bleibt */
+}
